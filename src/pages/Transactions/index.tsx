@@ -4,7 +4,7 @@ import { Summary } from "../../components/Summary";
 import { SearchForm } from "./components";
 import { PriceHighLight, TransactionsContainer, TransactionsTable } from "./style";
 import { TransactionsContext } from "../../Contexts/TransactionsContext";
-import { dateFormatter, priceFormatter } from "../../utils/Formatter";
+import { dateFormatter, priceFormatter } from "../../utils/formatter";
 
 
 export function Transactions(){
