@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { TransactionsContext } from "../Contexts/TransactionsContext"
-
+65
 export function useSummary(){
   const { transactions } = useContext(TransactionsContext)
 
@@ -14,7 +14,6 @@ export function useSummary(){
         acc.outcome += transaction.price
         acc.total -= transaction.price
       }
-
       
       return acc
     },
