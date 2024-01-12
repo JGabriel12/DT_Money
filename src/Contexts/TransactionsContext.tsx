@@ -1,11 +1,11 @@
-import { ReactNode, createContext, useEffect, useState } from "react";
+import { ReactNode, createContext, useEffect, useState } from 'react'
 
 interface Transaction {
-  id: number,
-  description: string,
-  type: 'income' | 'outcome',
-  category: string,
-  price: number,
+  id: number
+  description: string
+  type: 'income' | 'outcome'
+  category: string
+  price: number
   createdAt: string
 }
 
@@ -19,13 +19,11 @@ interface TransactionProviderProps {
 
 export const TransactionsContext = createContext({} as TransactionContextType)
 
-export function TransactionsProvider({children}: TransactionProviderProps) {
-
+export function TransactionsProvider({ children }: TransactionProviderProps) {
   const [transactions, setTransactions] = useState<Transaction[]>([])
 
   useEffect(() => {
-    
-    async function loadTransactions(){
+    async function loadTransactions() {
       const response = await fetch('http://localhost:3333/transactions')
       const data = await response.json()
 

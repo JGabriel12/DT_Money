@@ -12,7 +12,6 @@ export function App() {
       <TransactionsProvider>
         <Transactions />
       </TransactionsProvider>
-      
     </ThemeProvider>
   )
 }
