@@ -48,14 +48,12 @@ Pré-requisitos
 Clone o repositório:
 
 ```
-bash
 git clone https://github.com/JGabriel12/DT_Money.git
 ```
 
 Instale as dependências:
 
 ```
-bash
 cd DT_Money
 npm install
 ```
@@ -63,13 +61,11 @@ npm install
 Inicie o servidor JSON:
 
 ```
-bash
 npm run server
 ```
 
 Inicie o aplicativo:
 
 ```
-bash
 npm run dev
 ```
